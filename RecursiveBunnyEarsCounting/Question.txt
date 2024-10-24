@@ -1,0 +1,27 @@
+Objective: Create a recursive function to count the total number of ears for a line of bunnies. The line contains odd-numbered bunnies with 2 ears and even-numbered bunnies with 3 ears.
+
+Requirements:
+
+The function should be named bunnyEars2.
+
+The input parameter n represents the total number of bunnies in the line.
+
+The function must:
+
+Return 0 if there are no bunnies (n = 0).
+
+Recursively calculate the total number of ears:
+
+If n is odd, add 2 ears for the current bunny and call the function for n - 1.
+
+If n is even, add 3 ears for the current bunny and call the function for n - 1.
+
+Avoid using loops or multiplication.
+
+Example Test Cases:
+
+bunnyEars2(0) → 0 (No bunnies)
+
+bunnyEars2(1) → 2 (One bunny with 2 ears)
+
+bunnyEars2(2) → 5 (One bunny with 2 ears, second with 3 ears)
