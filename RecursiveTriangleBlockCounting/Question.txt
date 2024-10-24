@@ -1,0 +1,23 @@
+Objective: Create a recursive function to compute the total number of blocks in a triangle, where each row contains an increasing number of blocks. The top row has 1 block, the second row has 2 blocks, the third row has 3 blocks, and so on.
+
+Requirements:
+
+The function should be named triangle.
+
+The input parameter n represents the number of rows in the triangle.
+
+The function must:
+
+Return 0 if there are no rows (n = 0).
+
+Recursively compute the total number of blocks by adding the current row's block count (equal to the row number) to the result of the function call for n - 1.
+
+Avoid using loops or multiplication.
+
+Example Test Cases:
+
+triangle(0) → 0 (No rows, no blocks)
+
+triangle(1) → 1 (One row with 1 block)
+
+triangle(2) → 3 (First row has 1 block, second row has 2 blocks)
