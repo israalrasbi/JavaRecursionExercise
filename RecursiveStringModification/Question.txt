@@ -1,0 +1,25 @@
+Objective: Create a recursive function that takes a string and returns a new string where all adjacent characters are separated by an asterisk (*).
+
+Requirements:
+
+The function should be named allStar.
+
+The input parameter is:
+
+str: The string to modify.
+
+The function must:
+
+Return the string as-is if its length is 1 or 0 (base case).
+
+Recursively build the result by appending the first character, a *, and then the result of the function call for the rest of the string starting from the second character.
+
+Avoid using loops.
+
+Example Test Cases:
+
+allStar("hello") → "h*e*l*l*o"
+
+allStar("abc") → "a*b*c"
+
+allStar("ab") → "a*b"
