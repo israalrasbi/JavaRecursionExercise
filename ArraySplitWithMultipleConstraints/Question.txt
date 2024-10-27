@@ -1,0 +1,31 @@
+Objective: Create a recursive function that determines if an array of integers can be divided into two groups such that:
+
+The sum of the two groups is equal.
+
+All values that are multiples of 5 must be in one group.
+
+All values that are multiples of 3 (but not multiples of 5) must be in the other group.
+
+Requirements:
+
+The function should be named split53.
+
+The input parameter is:
+
+nums: The array of integers.
+
+The function must:
+
+Return true if it's possible to divide the array into two groups with the same sum, under the given constraints.
+
+Use recursion to explore different possibilities for splitting the array without using loops.
+
+Use helper functions to manage the current sum of the two groups.
+
+Example Test Cases:
+
+split53([1, 1]) → true (Can divide into two groups with sums 1 and 1)
+
+split53([1, 1, 1]) → false (Cannot divide evenly)
+
+split53([2, 4, 2]) → true (Can divide into two groups with sums 4 and 4)
