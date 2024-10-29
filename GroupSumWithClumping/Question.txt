@@ -1,0 +1,31 @@
+Objective: Create a recursive function that determines if it is possible to choose a group of integers from an array such that the sum of the selected group equals a given target. The function must adhere to the following constraint:
+
+If there are adjacent identical values in the array, all instances of that value must either be included in the group or excluded entirely.
+
+Requirements:
+
+The function should be named groupSumClump.
+
+The input parameters are:
+
+start: The current index in the array (initially 0).
+
+nums: The array of integers.
+
+target: The target sum that the chosen group should equal.
+
+The function must:
+
+Return true if a valid group can be formed that sums to the target.
+
+Use recursion to explore possibilities while adhering to the clumping constraint.
+
+Use one loop to find the extent of identical adjacent values.
+
+Example Test Cases:
+
+groupSumClump(0, [2, 4, 8], 10) → true (Group [2, 4, 4] sums to 10)
+
+groupSumClump(0, [1, 2, 4, 8, 1], 14) → true (Group [2, 4, 8] sums to 14)
+
+groupSumClump(0, [2, 4, 4, 8], 14) → false (No group sums to 14)
