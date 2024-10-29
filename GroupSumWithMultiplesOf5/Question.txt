@@ -1,0 +1,33 @@
+Objective: Create a recursive function that determines if it is possible to choose a group of some integers from an array such that the sum of the selected group equals a given target. The function must follow these constraints:
+
+All multiples of 5 in the array must be included in the group.
+
+If a number immediately follows a multiple of 5 and is 1, that number must not be chosen.
+
+Requirements:
+
+The function should be named groupSum5.
+
+The input parameters are:
+
+start: The current index in the array (initially 0).
+
+nums: The array of integers.
+
+target: The target sum that the chosen group should match.
+
+The function must:
+
+Return true if a valid group can be formed that sums to the target.
+
+Use recursion to explore different possibilities without using loops.
+
+Automatically include multiples of 5 in the group and ensure values following multiples of 5 that are equal to 1 are excluded from the group.
+
+Example Test Cases:
+
+groupSum5(0, [2, 5, 10, 4], 19) → true (Group [5, 10, 4] sums to 19)
+
+groupSum5(0, [2, 5, 10, 4], 17) → true (Group [2, 5, 10] sums to 17)
+
+groupSum5(0, [2, 5, 10, 4], 12) → false (No group sums to 12)
