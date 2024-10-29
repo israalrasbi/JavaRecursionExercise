@@ -1,0 +1,29 @@
+Objective: Create a function that determines if it is possible to select a group of integers from an array such that the sum of the selected integers equals a given target, with the additional constraint that if an integer is included in the group, the integer immediately following it cannot be included.
+
+Requirements:
+
+The function should be named groupNoAdj.
+
+The function should use a recursive helper function to manage the selection logic.
+
+The input parameters are:
+
+start: The current index in the array (initially 0).
+
+nums: The array of integers.
+
+target: The target sum that the chosen group should equal.
+
+The helper function must:
+
+Check if it's possible to achieve the target sum with the remaining numbers in the array while respecting the non-adjacency constraint.
+
+Avoid using loops in the recursive logic.
+
+Example Test Cases:
+
+groupNoAdj(0, [2, 5, 10, 4], 12) → true (Group [2, 10] sums to 12)
+
+groupNoAdj(0, [2, 5, 10, 4], 14) → false (No group sums to 14)
+
+groupNoAdj(0, [2, 5, 10, 4], 7) → false (No group sums to 7)
