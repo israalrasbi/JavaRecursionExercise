@@ -1,0 +1,25 @@
+Objective: Create a function that determines if it is possible to split an array of integers into two groups such that the sums of the two groups are equal. Every integer must be included in one group or the other.
+
+Requirements:
+
+The function should be named splitArray.
+
+The function should internally call a recursive helper function.
+
+The input parameter is:
+
+nums: The array of integers.
+
+The helper function must:
+
+Check if it's possible to achieve the target sum with the remaining numbers in the array.
+
+Avoid using loops in the recursive logic.
+
+Example Test Cases:
+
+splitArray([2, 2]) → true (The two groups can be [2] and [2])
+
+splitArray([2, 3]) → false (No possible split)
+
+splitArray([5, 2, 3]) → true (The groups can be [5] and [2, 3])
